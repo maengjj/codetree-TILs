@@ -8,5 +8,5 @@ elif amath>bmath:
 elif amath==bmath:
     if aeng>beng:
         print("A")
-    elif beng>amath:
+    elif beng>aeng:
         print("B")
