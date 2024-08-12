@@ -5,7 +5,7 @@ if bmath>amath:
     print("B")
 elif amath>bmath:
     print("A")
-else:
+elif amath==bmath:
     if aeng>beng:
         print("A")
     elif beng>amath:
