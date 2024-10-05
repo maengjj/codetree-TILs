@@ -1,11 +1,14 @@
+def print_stars(n):
+    for i in range(n):
+        # 첫 번째 줄과 마지막 줄은 모두 별로 채움
+        if i == 0 or i == n-1:
+            print("* " * n)
+        # 그 외의 줄은 첫 번째 별 이후로 공백이 포함됨
+        else:
+            print("* " + "  " * i + "*")
+
+# 입력 받기
 n = int(input())
 
-for i in range(n):
-    for j in range(n):
-        if i == 0 or i == n - 1:  # 첫 번째 줄과 마지막 줄
-            print('*', end=' ')
-        elif j == 0 or j == n - 1 or j == i:  # 중간 줄에서 첫 번째, 마지막, 대각선 위치에 별 출력
-            print('*', end=' ')
-        else:
-            print(' ', end=' ')  # 그 외에는 공백 출력
-    print()  # 한 줄이 끝날 때 줄 바꿈
+# 출력하기
+print_stars(n)
